@@ -13,40 +13,40 @@ function App() {
   // List of Tasks
   const [listTasks, setTasks] = useState([]);
 
-  const [listTasks2, setTasks2] = useState([
-    {
-      id: 1,
-      text: "Doctors Appointment",
-      description: "Description.",
-      day: "Feb 1st",
-      state: "important",
-      reminder: true,
-    },
-    {
-      id: 2,
-      text: "Meeting at School",
-      description: "Description description.",
-      day: "Feb 2nd",
-      state: "not important",
-      reminder: true,
-    },
-    {
-      id: 3,
-      text: "Food Shopping",
-      description: "Description description description.",
-      day: "Feb 3rd",
-      state: " not important",
-      reminder: false,
-    },
-    {
-      id: 4,
-      text: "Pick up Laundry",
-      description: "Description description description description.",
-      day: "Feb 4th",
-      state: "neutral",
-      reminder: false,
-    },
-  ]);
+  // const [listTasks2, setTasks2] = useState([
+  //   {
+  //     id: 1,
+  //     text: "Doctors Appointment",
+  //     description: "Description.",
+  //     day: "Feb 1st",
+  //     state: "important",
+  //     reminder: true,
+  //   },
+  //   {
+  //     id: 2,
+  //     text: "Meeting at School",
+  //     description: "Description description.",
+  //     day: "Feb 2nd",
+  //     state: "not important",
+  //     reminder: true,
+  //   },
+  //   {
+  //     id: 3,
+  //     text: "Food Shopping",
+  //     description: "Description description description.",
+  //     day: "Feb 3rd",
+  //     state: " not important",
+  //     reminder: false,
+  //   },
+  //   {
+  //     id: 4,
+  //     text: "Pick up Laundry",
+  //     description: "Description description description description.",
+  //     day: "Feb 4th",
+  //     state: "neutral",
+  //     reminder: false,
+  //   },
+  // ]);
 
   // UseEffect (in order to the load data [from the server] when the app.js page load, we're going to use a hooks called useEffect. It's often used for a situation when you want something to happen right when the page loads)
   useEffect(() => {
@@ -75,21 +75,21 @@ function App() {
   };
 
   // Add Task Local
-  const addTaskLocal = (task) => {
-    const id = listTasks[listTasks.length - 1].id + 1;
-    let description = "Description";
+  // const addTaskLocal = (task) => {
+  //   const id = listTasks[listTasks.length - 1].id + 1;
+  //   let description = "Description";
 
-    for (let i = 1; i < id; i++) {
-      description = description + " description";
-    }
+  //   for (let i = 1; i < id; i++) {
+  //     description = description + " description";
+  //   }
 
-    description += ".";
+  //   description += ".";
 
-    const newTask = { id, description, ...task };
-    setTasks([...listTasks, newTask]);
+  //   const newTask = { id, description, ...task };
+  //   setTasks([...listTasks, newTask]);
 
-    console.log(listTasks);
-  };
+  //   console.log(listTasks);
+  // };
 
   // Add Task Local
   const addTaskServer = async (task) => {
@@ -120,9 +120,9 @@ function App() {
   };
 
   // Delete Task Local
-  const deleteTaskLocal = (id) => {
-    setTasks(listTasks.filter((task) => task.id !== id));
-  };
+  // const deleteTaskLocal = (id) => {
+  //   setTasks(listTasks.filter((task) => task.id !== id));
+  // };
 
   // Delete Task Server
   const deleteTaskServer = async (id) => {

@@ -66,7 +66,7 @@ const AddTask = ({ onAdd }) => {
                 type="radio"
                 name="state"
                 value="important"
-                checked={state == "important"}
+                checked={state === "important"}
                 readOnly
               />
               <label>Important</label>
@@ -76,7 +76,7 @@ const AddTask = ({ onAdd }) => {
                 type="radio"
                 name="state"
                 value="not important"
-                checked={state == "not important"}
+                checked={state === "not important"}
                 readOnly
               />
               <label>Not Important</label>
@@ -86,7 +86,7 @@ const AddTask = ({ onAdd }) => {
                 type="radio"
                 name="state"
                 value="neutral"
-                checked={state == "neutral"}
+                checked={state === "neutral"}
                 readOnly
               />
               <label>Neutral</label>

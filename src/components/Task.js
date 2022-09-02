@@ -7,16 +7,16 @@ import Popup from "reactjs-popup";
 
 const Task = ({ task, deleteTasksServer, editTasksServer}) => {
   const checkState = (taskState) => {
-    if (taskState == "important") {
+    if (taskState === "important") {
       return "darkred";
-    } else if (taskState == "not important") {
+    } else if (taskState === "not important") {
       return "darkgreen";
     } else {
       return "darkblue";
     }
   };
 
-  const state = checkState(task.state);
+  // const state = checkState(task.state);
 
   return (
     <div className="card">
