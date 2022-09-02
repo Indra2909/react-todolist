@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { FaToiletPaperSlash } from "react-icons/fa";
 import Task from "./Task";
 
 const important = "important";
