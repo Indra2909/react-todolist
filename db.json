@@ -1,0 +1,44 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Doctors Appointment",
+      "description": "Description.",
+      "day": "Feb 1st",
+      "state": "important",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Meeting at School",
+      "description": "Description description.",
+      "day": "Feb 2nd",
+      "state": "not important",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Food Shopping",
+      "description": "Description description description.",
+      "day": "Feb 3rd",
+      "state": "not important",
+      "reminder": false
+    },
+    {
+      "id": 4,
+      "text": "Pick up Laundry",
+      "description": "Description description description description.",
+      "day": "Feb 4th",
+      "state": "neutral",
+      "reminder": false
+    },
+    {
+      "text": "Clean up dishes",
+      "day": "Feb 5th",
+      "reminder": true,
+      "state": "important",
+      "description": "Description description description description description.",
+      "id": 5
+    }
+  ]
+}
