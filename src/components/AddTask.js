@@ -17,13 +17,12 @@ const AddTask = ({ onAdd }) => {
 
     onAdd({ text, day, reminder, state });
 
-    setText("hello");
+    setText("");
     setDay("");
     setReminder(false);
     setState("");
-
   };
-  
+
   return (
     <div>
       <h2>Add Task</h2>
@@ -57,7 +56,8 @@ const AddTask = ({ onAdd }) => {
         </div>
         <div className="addTask-control radioGroup">
           <label className="title">State</label>
-          <div className="halfContainer"
+          <div
+            className="halfContainer"
             onChange={(e) => setState(e.target.value)}
             value={state}
           >

@@ -1,9 +1,14 @@
+html{
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+}
+
 .toDoList {
-  // min-height: 800px;
   box-sizing: border-box;
   width: 60%;
-  min-height: auto;
-  // margin: 30px;
+  height: auto;
   border: 3px solid black;
   padding: 0px 30px 30px 30px;
   border-radius: 5px;
@@ -132,6 +137,7 @@
   // border: 4px solid red;
   display: flex;
   justify-content: center;
+  
 
   .important {
     // border: 4px solid green;
@@ -156,6 +162,9 @@
     // border: 4px solid red;
     font-weight: 700;
     opacity: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;;
   }
 
   .notImportant {
@@ -185,6 +194,9 @@
     // border: 4px solid red;
     font-weight: 700;
     opacity: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;;
   }
 
   .neutral {
@@ -210,6 +222,9 @@
     // border: 4px solid red;
     font-weight: 700;
     opacity: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;;
   }
 }
 
@@ -236,6 +251,7 @@
     // border: 4px solid blueviolet;
     display: flex;
     flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.75);
 
     .buttonElement {
       display: flex;

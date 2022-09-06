@@ -36,9 +36,17 @@
       "text": "Clean up dishes",
       "day": "Feb 5th",
       "reminder": true,
-      "state": "important",
+      "state": "not important",
       "description": "Description description description description description.",
       "id": 5
+    },
+    {
+      "text": "Task6",
+      "day": "Feb 6th",
+      "reminder": true,
+      "state": "neutral",
+      "description": "Description description description description description description.",
+      "id": 6
     }
   ]
 }

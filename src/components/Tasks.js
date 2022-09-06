@@ -12,7 +12,6 @@ const Tasks = ({
   editTasksServer,
   showEditForm,
 }) => {
-  //let categories = [];
 
   const [filterCategories, setFilterCategories] = useState([]);
 
