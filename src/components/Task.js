@@ -16,8 +16,6 @@ const Task = ({ task, deleteTasksServer, editTasksServer}) => {
     }
   };
 
-  // const state = checkState(task.state);
-
   return (
     <div className="card">
       {/* Card Top Button Element */}

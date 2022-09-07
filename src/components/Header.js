@@ -8,8 +8,8 @@ const Header = ({addTaskOnClick, showHideStyle}) => {
         <h1>To Do List</h1>
         <Button
           addTaskOnClick={addTaskOnClick}
-          color= {showHideStyle ? 'darkred' : 'black'}
-          text={showHideStyle ? 'Close' : 'Add Task +'}
+          color={showHideStyle ? "#ff0000" : "#ff0000"}
+          text={showHideStyle ? "Close" : "Add Task +"}
         />
       </div>
     </div>

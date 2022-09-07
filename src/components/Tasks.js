@@ -19,10 +19,8 @@ const Tasks = ({
     let categories = [...filterCategories];
 
     if (categories.includes(category)) {
-      // console.log("exists");
       categories = categories.filter((x) => x !== category);
     } else {
-      // console.log("not exists");
       categories.push(category);
     }
 
@@ -35,7 +33,6 @@ const Tasks = ({
     <div>
       <h2>List: </h2>
       <div className="categories">
-        {/* className={`singletask ${singleTask.reminder ? "reminder" : ""}`} */}
         <div
           className={`important${
             filterCategories.includes("important") ? "-active" : ""
